@@ -16,7 +16,7 @@
 
 const subdomains = {
   name: "subdomains",
-  version: "0.0.11",
+  version: "0.0.1",
   register: async function register(server, options) {
     server.ext("onRequest", (request, h) => {
       // throw Error in case @options[exclude] is not provided
