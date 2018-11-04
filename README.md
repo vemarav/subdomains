@@ -1,4 +1,4 @@
-# subdomains 0.0.1
+# subdomains
 
 This plugin supprots only [Hapi](hapijs.com)
 
