@@ -17,13 +17,13 @@
 const subdomains = {
   name: "subdomains",
   version: "0.0.1",
-  register: aysnc (server, options) => {
+  register: async function register(server, options) {
     server.ext("onRequest", (request, h) => {
       // throw Error in case @options[exclude] is not provided
       // while registering the plugin
       if (!Array.isArray(options.exclude))
-        throw new "provide exclude property as an array to reject subdomains\n"
-        + " or provide an empty array "();
+        throw new "provide exclude property as an array to reject subdomains\n"() +
+          " or provide an empty array "();
 
       // if url = http://kiprosh.lvh.me:8080/?name=hapi
       // then hostname = kiprosh.lvh.me
@@ -65,4 +65,4 @@ const subdomains = {
   }
 };
 
-export default subdomains;
+module.exports = subdomains;
