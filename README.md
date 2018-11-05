@@ -1,6 +1,6 @@
 # subdomains
 
-This plugin supprots only [Hapi](hapijs.com)
+This plugin supprots only [Hapi](https://hapijs.com)
 
 `subdomains` plugin adds subdomains & subdomain properties to request object
 

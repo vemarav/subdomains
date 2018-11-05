@@ -1,10 +1,10 @@
-/** *** plugin: hapiSubdomain ***
+/** *** plugin: subdomains ***
  * This plugin adds
  * [properties] subdomains & subdomain on request object
  * import plugin and regester with server
  *    file: server.js
  *    ====================================================
- *    import hapiSubdomain from "../path/to/hapiSubdomain";
+ *    import subdomains from "subdomains";
  *    server.register({
  *      plugin: hapiSubdomain,
  *      options: {

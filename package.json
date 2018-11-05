@@ -3,12 +3,10 @@
   "version": "0.0.3",
   "description": "A hapi plugin which extracts subdomains form uri",
   "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git@gitub.com:vemarav/subdomains"
+    "url": "https://github.com/vemarav/subdomains"
   },
   "keywords": [
     "hapi-subdomains",
