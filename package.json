@@ -1,9 +1,11 @@
 {
   "name": "subdomains",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A hapi plugin which extracts subdomains form uri",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "lab -c"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/vemarav/subdomains"
@@ -16,7 +18,10 @@
   "author": "Aravind Vemula",
   "license": "MIT",
   "devDependencies": {
+    "code": "^5.2.3",
     "eslint": "^5.8.0",
-    "hapi": "^17.6.4"
+    "hapi": "^17.6.4",
+    "hoek": "^6.0.2",
+    "lab": "^17.3.0"
   }
 }

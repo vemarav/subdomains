@@ -8,7 +8,7 @@
  *    server.register({
  *      plugin: hapiSubdomain,
  *      options: {
- *        domainName: 'trackive-staging.com'
+ *        domainName: 'domain.com'
  *        exclude: ['www', 'api', 'v2']
  *      }
  *    })
@@ -16,8 +16,8 @@
 
 const subdomains = {
   name: "subdomains",
-  version: "0.0.3",
-  register: async function register(server, options) {
+  version: "0.0.4",
+  register: function register(server, options) {
     server.ext("onRequest", (request, h) => {
       // throw Error in case @options[exclude] is not provided
       // while registering the plugin
@@ -25,19 +25,19 @@ const subdomains = {
         throw new "provide exclude property as an array to reject subdomains\n"() +
           " or provide an empty array "();
 
-      // if url = http://kiprosh.lvh.me:8080/?name=hapi
-      // then hostname = kiprosh.lvh.me
+      // if url = http://comany.lvh.me:8080/?name=hapi
+      // then hostname = company.lvh.me
       const { hostname } = request.info;
 
-      // if hostname = kiprosh.v2.lvh.me
-      //             or kiprosh.v2.trackive-staging.com
-      // then hostNameArray = ['kiprosh', 'v2', 'lvh', 'me']
-      //                    or ['kiprosh', 'v2', 'trackive-staging', 'com']
+      // if hostname = company.api.lvh.me
+      //             or company.v2.domain.com
+      // then hostNameArray = ['comany', 'api', 'lvh', 'me']
+      //                    or ['comapny', 'v2', 'domain', 'com']
       let hostNameArray = hostname.split(".");
 
       // provide @options[domainName] to reject domain in case of a.co.in
       // otherwise it will
-      // reject lvh.me or trackive-staging.com or co.in
+      // reject lvh.me or domain.com or domain.co.in
       const sliceLength = options.domainName
         ? options.domainName.split(".").length
         : 2;
@@ -50,15 +50,15 @@ const subdomains = {
       hostNameArray = hostNameArray.filter(s => !options.exclude.includes(s));
 
       // assign subdomains in case one or more present
-      // hostname = aravind.kiprosh.lvh.me
-      // hostNameArray = ['aravind', 'kiprosh']
-      // request.subdomains = ['aravind', 'kiprosh']
+      // hostname = users.company.lvh.me
+      // hostNameArray = ['users', 'company']
+      // request.subdomains = ['users', 'company']
       request.subdomains = hostNameArray;
 
       // assign [0th element] means first subdomain
-      // hostname = aravind.kiprosh.lvh.me
-      // hostNameArray = ['aravind', 'kiprosh']
-      // request.subdomain = 'aravind'
+      // hostname = users.company.lvh.me
+      // hostNameArray = ['users', 'company']
+      // request.subdomain = 'users'
       [request.subdomain] = hostNameArray;
       return h.continue;
     });
