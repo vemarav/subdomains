@@ -26,18 +26,23 @@ server.register({
 
 http://users.kiprosh.trackive.com
 
-```js
+```
+// file server.js
 import subdomains from "subdomains";
 
-server.route([{
-  method: 'GET',
-  path: '\',
-  handler: (req, res) => {
-    console.log(req.subdomains); // ['users', 'kiprosh']
-    console.log(req.subdomain); // 'users'
-    return 'Home';
-  }
-}]);
+server.route(
+  [
+    {
+      method: 'GET',
+      path: '\',
+      handler: (req, res) => {
+        console.log(req.subdomains); // ['users', 'kiprosh']
+        console.log(req.subdomain); // 'users'
+        return 'Home';
+      }
+    }
+  ]
+);
 
 server.register({
   plugin: subdomains,
