@@ -26,7 +26,7 @@ server.register({
 
 http://users.kiprosh.trackive.com
 
-```coffee
+```
 // file server.js
 import subdomains from "subdomains";
 
@@ -55,9 +55,9 @@ server.register({
   }
 });
 
-.
-.
-.
+
+
+
 server.start()
 ```
 
