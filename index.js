@@ -6,7 +6,7 @@
  *    ====================================================
  *    import subdomains from "subdomains";
  *    server.register({
- *      plugin: hapiSubdomain,
+ *      plugin: subdomains,
  *      options: {
  *        domainName: 'domain.com'
  *        exclude: ['www', 'api', 'v2']
