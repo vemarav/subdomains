@@ -5,6 +5,7 @@ node_js:
 
 before_script:
   - npm install big-time --save-dev
+  - npm install istanbul --save-dev
 
 install:
   - npm install -g codecov
