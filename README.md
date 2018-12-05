@@ -1,5 +1,7 @@
 # subdomains
-![Travis CI](https://api.travis-ci.com/vemarav/subdomains.svg?branch=master)
+
+[![codecov](https://codecov.io/gh/vemarav/subdomains/branch/master/graph/badge.svg)](https://codecov.io/gh/vemarav/subdomains)
+[![Build Status](https://travis-ci.com/vemarav/subdomains.svg?branch=master)](https://travis-ci.com/vemarav/subdomains)
 
 This plugin supprots only [Hapi](https://hapijs.com)
 
