@@ -1,5 +1,14 @@
 language: node_js
+
 node_js:
   - "10"
+
 before_script:
   - npm install big-time --save-dev
+
+install:
+  - npm install -g codecov
+
+script:
+  - istanbul cover ./node_modules/lab/bin/lab --report lcovonly  -- -l  && codecov
+  - codecov

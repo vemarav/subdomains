@@ -1,4 +1,5 @@
 # subdomains
+![Travis CI](https://api.travis-ci.com/vemarav/subdomains.svg?branch=master)
 
 This plugin supprots only [Hapi](https://hapijs.com)
 
