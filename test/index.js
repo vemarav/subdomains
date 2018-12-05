@@ -2,7 +2,6 @@ var Code = require("code"); // assertion library
 var Lab = require("lab");
 var lab = (exports.lab = Lab.script());
 var Hapi = require("hapi");
-var Hoek = require("hoek");
 
 var subdomains = require("../");
 
@@ -12,14 +11,41 @@ lab.experiment("Subdomains plugin", function() {
   lab.test("should load correctly", async () => {
     const server = Hapi.Server({});
 
-    await server.register([
-      {
-        plugin: subdomains,
-        options: {
-          exclude: ["www", "api"]
-        }
+    await server.register({
+      plugin: subdomains,
+      options: {
+        exclude: ["www", "api"]
       }
-    ]);
+    });
+  });
+
+  lab.test("throw provide exclude if not provided", async () => {
+    const server = Hapi.Server({
+      debug: false
+    });
+
+    server.route({
+      method: "GET",
+      path: "/",
+      handler: async () => {
+        return "ok";
+      }
+    });
+
+    await server.register({
+      plugin: subdomains,
+      options: {
+        domainName: "example.com"
+      }
+    });
+
+    const res = await server.inject("http://example.com/");
+    const { message } = res.request.response._error;
+    expect(message).to.equal(
+      "provide exclude property as an array" +
+        " toreject subdomains or provide an empty array!"
+    );
+    expect(res.statusCode).to.equal(500);
   });
 
   lab.test("should do nothing if no subdomain", async () => {
@@ -28,7 +54,7 @@ lab.experiment("Subdomains plugin", function() {
     server.route({
       method: "GET",
       path: "/",
-      handler: async request => {
+      handler: async () => {
         return "ok";
       }
     });
