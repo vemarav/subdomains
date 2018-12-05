@@ -22,8 +22,10 @@ const subdomains = {
       // throw Error in case @options[exclude] is not provided
       // while registering the plugin
       if (!Array.isArray(options.exclude))
-        throw new "provide exclude property as an array to reject subdomains\n"() +
-          " or provide an empty array "();
+        throw new TypeError(
+          "provide exclude property as an array to" +
+            "reject subdomains or provide an empty array!"
+        );
 
       // if url = http://comany.lvh.me:8080/?name=hapi
       // then hostname = company.lvh.me

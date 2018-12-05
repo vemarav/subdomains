@@ -8,7 +8,7 @@ This plugin supprots only [Hapi](https://hapijs.com)
 
 ```js
 // file: server.js
-import subdomains from "subdomains";
+const subdomains = require("subdomains");
 
 server.register({
   plugin: subdomains,
@@ -26,23 +26,29 @@ server.register({
 
 http://users.kiprosh.trackive.com
 
-```
+```js
 // file server.js
-import subdomains from "subdomains";
 
-server.route(
-  [
-    {
-      method: 'GET',
-      path: '\',
-      handler: (req, res) => {
-        console.log(req.subdomains); // ['users', 'kiprosh']
-        console.log(req.subdomain); // 'users'
-        return 'Home';
-      }
-    }
-  ]
-);
+"use strict";
+const subdomains = require("subdomains");
+const Hapi = require("hapi");
+
+// Create a server with a host and port
+const server = Hapi.server({
+  host: "localhost",
+  port: 8000
+});
+
+// Add the route
+server.route({
+  method: "GET",
+  path: "/",
+  handler: (request, reply) => {
+    console.log(request.subdomains); // ['users', 'kiprosh']
+    console.log(request.subdomain); // 'users'
+    return "Home";
+  }
+});
 
 server.register({
   plugin: subdomains,
@@ -55,19 +61,35 @@ server.register({
   }
 });
 
+// Start the server
+async function start() {
+  try {
+    await server.start();
+  } catch (err) {
+    console.log(err);
+    process.exit(1);
+  }
 
+  console.log("Server running at:", server.info.uri);
+}
 
-
-server.start()
+start();
 ```
 
 ## Contributing
 
-Feel free to contribute
+Whether you are a novice or experienced software developer,
+all contributions and suggestions are welcome!
+
+Feel free to contribute, hosted on ❤️ with Github
 
 ## LICENSE
 
-package licensed under [MIT License](https://github.com/vemarav/subdomains/blob/master/LICENSE)
+Package published under [MIT License](https://github.com/vemarav/subdomains/blob/master/LICENSE)
+
+## NOTE
+
+Liked my work then don't forget to ⭐️ the repo as an appraisal.
 
 ## Social
 

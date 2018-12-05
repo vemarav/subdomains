@@ -18,10 +18,10 @@
   "author": "Aravind Vemula",
   "license": "MIT",
   "devDependencies": {
-    "code": "^5.2.3",
-    "eslint": "^5.8.0",
-    "hapi": "^17.6.4",
-    "hoek": "^6.0.2",
+    "code": "^5.2.4",
+    "eslint": "^5.9.0",
+    "hapi": "^17.8.1",
+    "hoek": "^6.1.2",
     "lab": "^17.3.0"
   }
 }
