@@ -1,6 +1,7 @@
 # subdomains
 
-[![npm](https://img.shields.io/npm/v/subdomains.svg)](https://www.npmjs.com/package/subdomains)
+[![NPM](https://nodei.co/npm/subdomains.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/subdomains/)
+
 [![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/npm)
 [![codecov](https://codecov.io/gh/vemarav/subdomains/branch/master/graph/badge.svg)](https://codecov.io/gh/vemarav/subdomains)
 [![Build Status](https://travis-ci.com/vemarav/subdomains.svg?branch=master)](https://travis-ci.com/vemarav/subdomains)
