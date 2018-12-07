@@ -1,7 +1,7 @@
 # 0.0.6
 
 - added npm & subdomains version badges
-- fixed space in throw error if exclude prop not provided
+- fixed typo of throw error if `exclude` prop not provided
 
     v0.0.5
 
