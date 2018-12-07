@@ -43,7 +43,7 @@ lab.experiment("Subdomains plugin", function() {
     const { message } = res.request.response._error;
     expect(message).to.equal(
       "provide exclude property as an array" +
-        " toreject subdomains or provide an empty array!"
+        " to reject subdomains or provide an empty array!"
     );
     expect(res.statusCode).to.equal(500);
   });

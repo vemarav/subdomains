@@ -1,5 +1,7 @@
 # subdomains
 
+[![npm](https://img.shields.io/npm/v/subdomains.svg)](https://www.npmjs.com/package/subdomains)
+[![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/npm)
 [![codecov](https://codecov.io/gh/vemarav/subdomains/branch/master/graph/badge.svg)](https://codecov.io/gh/vemarav/subdomains)
 [![Build Status](https://travis-ci.com/vemarav/subdomains.svg?branch=master)](https://travis-ci.com/vemarav/subdomains)
 
@@ -7,7 +9,7 @@ This plugin supprots only [Hapi](https://hapijs.com)
 
 `subdomains` plugin adds subdomains & subdomain properties to request object
 
-**Usage**
+## Usage
 
 ```js
 // file: server.js
@@ -25,7 +27,7 @@ server.register({
 });
 ```
 
-**Example**
+## Example
 
 http://users.kiprosh.trackive.com
 
@@ -79,21 +81,36 @@ async function start() {
 start();
 ```
 
-## Contributing
+## CONTRIBUTING
 
 Whether you are a novice or experienced software developer,
 all contributions and suggestions are welcome!
 
-Feel free to contribute, hosted on ❤️ with Github
+1. Clone repo
+
+   ```shell
+   git clone https://github.com/vemarav/subdomains.git
+   ```
+
+2. Add features or bug fixes
+3. Make a Pull Request
+
+   OR
+
+   Report a bug [here](https://github.com/vemarav/subdomains/issues/new/choose)
+
+Feel free to contribute, hosted on ❤️ with Github.
 
 ## LICENSE
 
 Package published under [MIT License](https://github.com/vemarav/subdomains/blob/master/LICENSE)
 
-## NOTE
+## Author
 
-Liked my work then don't forget to ⭐️ the repo as an appraisal.
+- [Aravind Vemula](https://github.com/vemarav)
 
-## Social
+> Liked my work then don't forget to ⭐️ the repo as an appraisal.
+
+## SOCIAL
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/vemarav.svg?style=social&label=Follow)](https://twitter.com/vemarav)
