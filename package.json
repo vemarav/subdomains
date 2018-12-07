@@ -1,8 +1,8 @@
 {
   "name": "subdomains",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A hapi plugin which extracts subdomains form uri",
-  "main": "index.js",
+  "main": "plugin/index.js",
   "scripts": {
     "test": "lab -c"
   },
@@ -21,7 +21,6 @@
     "code": "^5.2.4",
     "eslint": "^5.9.0",
     "hapi": "^17.8.1",
-    "hoek": "^6.1.2",
     "lab": "^17.3.0"
   }
 }
