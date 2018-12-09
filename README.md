@@ -60,7 +60,7 @@ server.register({
   plugin: subdomains,
   options: {
     // provide domain name for better results
-    domainName: "yourdomain.co.in",
+    domainName: "trackive.com",
     // provide subdomains to exclude
     // or an empty array
     exclude: ["www", "api"]
