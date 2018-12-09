@@ -1,7 +1,5 @@
 # subdomains
 
-[![NPM](https://nodei.co/npm/subdomains.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/subdomains/)
-
 [![subdomains](https://img.shields.io/badge/dynamic/json.svg?label=subdomains&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvemarav%2Fsubdomains%2Fmaster%2Fpackage.json&query=version&colorB=orange&prefix=v)](https://www.npmjs.com/package/subdomains/v/latest)
 [![downloads](https://img.shields.io/npm/dt/subdomains.svg)](https://npmjs.com/package/subdomains/v/latest)
 [![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/npm)
