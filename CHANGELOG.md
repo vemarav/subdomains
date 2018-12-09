@@ -1,19 +1,22 @@
+# 0.0.7
+
+- Tested on node v8.x, v10.x, v11.4.0
+
 # 0.0.6
 
 - added npm & subdomains version badges
 - fixed typo of throw error if `exclude` prop not provided
 
-    v0.0.5
+  v0.0.5
 
-    TypeError: provide exclude property as an array **toreject** subdomains or provide an empty array!
+  TypeError: provide exclude property as an array **toreject** subdomains or provide an empty array!
 
-    v0.0.6
+  v0.0.6
 
-    TypeError: provide exclude property as an array **to reject** subdomains or provide an empty array!
+  TypeError: provide exclude property as an array **to reject** subdomains or provide an empty array!
 
 - removed `hoek` dev-dependency
 - update [CONTRIBUTING.md](/CONTRIBUTING.md)
-
 
 # 0.0.5
 
