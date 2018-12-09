@@ -6,7 +6,6 @@ node_js:
   - "11"
 
 before_script:
-  - npm install
   - npm install big-time --save-dev
   - npm install istanbul --save-dev
 
