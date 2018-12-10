@@ -1,6 +1,6 @@
 {
   "name": "subdomains",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A hapi plugin which extracts subdomains form uri",
   "main": "plugin/index.js",
   "scripts": {

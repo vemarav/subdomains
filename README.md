@@ -1,6 +1,6 @@
 # subdomains
 
-[![subdomains](https://img.shields.io/badge/dynamic/json.svg?label=subdomains&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvemarav%2Fsubdomains%2Fmaster%2Fpackage.json&query=version&colorB=orange&prefix=v)](https://www.npmjs.com/package/subdomains/v/latest)
+[![subdomains](https://img.shields.io/badge/dynamic/json.svg?label=subdomains&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvemarav%2Fsubdomains%2Fmaster%2Fpackage.json&query=version&colorB=0275D8&prefix=v)](https://www.npmjs.com/package/subdomains/v/latest)
 [![downloads](https://img.shields.io/npm/dt/subdomains.svg)](https://npmjs.com/package/subdomains/v/latest)
 [![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/npm)
 [![codecov](https://codecov.io/gh/vemarav/subdomains/branch/master/graph/badge.svg)](https://codecov.io/gh/vemarav/subdomains)
@@ -8,7 +8,7 @@
 
 This plugin supprots only [Hapi](https://hapijs.com)
 
-`subdomains` plugin adds subdomains & subdomain properties to request object
+**subdomains** plugin adds subdomains & subdomain properties to request object
 
 ## Usage
 
