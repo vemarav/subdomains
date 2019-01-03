@@ -6,6 +6,8 @@
 [![codecov](https://codecov.io/gh/vemarav/subdomains/branch/master/graph/badge.svg)](https://codecov.io/gh/vemarav/subdomains)
 [![Build Status](https://travis-ci.com/vemarav/subdomains.svg?branch=master)](https://travis-ci.com/vemarav/subdomains)
 
+[![](https://img.shields.io/github/stars/vemarav/subdomains.svg?label=Stars&style=social)](https://github.com/vemarav/subdomains)
+
 This plugin supprots only [Hapi](https://hapijs.com)
 
 **subdomains** plugin adds subdomains & subdomain properties to request object
@@ -109,8 +111,6 @@ Package published under [MIT License](https://github.com/vemarav/subdomains/blob
 ## Author
 
 - [Aravind Vemula](https://github.com/vemarav)
-
-> Liked my work then don't forget to ⭐️ the repo as an appraisal.
 
 ## SOCIAL
 

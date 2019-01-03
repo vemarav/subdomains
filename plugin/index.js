@@ -48,7 +48,9 @@ const subdomains = {
         hostNameArray.length - sliceLength
       );
 
-      // @param[s] is subdomain
+      /**
+       * @param{s} subdomain
+       */
       hostNameArray = hostNameArray.filter(s => !options.exclude.includes(s));
 
       // assign subdomains in case one or more present
