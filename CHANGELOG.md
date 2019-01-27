@@ -1,3 +1,9 @@
+# v1.0.0
+- Tested with latest hapijs v18.0.0
+
+# v0.0.9
+- No change
+
 # v0.0.8
 - Fetch plugin version from package.json
 
