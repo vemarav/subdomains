@@ -1,6 +1,6 @@
 {
   "name": "subdomains",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A hapi plugin which extracts subdomains from uri",
   "main": "plugin/index.js",
   "scripts": {
@@ -19,8 +19,8 @@
   "license": "MIT",
   "devDependencies": {
     "code": "^5.2.4",
-    "eslint": "^5.9.0",
-    "hapi": "^17.8.1",
-    "lab": "^18.0.0"
+    "eslint": "^5.16.0",
+    "@hapi/hapi": "^18.3.1",
+    "lab": "^18.0.2"
   }
 }
