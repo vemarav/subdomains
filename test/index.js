@@ -1,13 +1,13 @@
 var Code = require("code"); // assertion library
 var Lab = require("lab");
 var lab = (exports.lab = Lab.script());
-var Hapi = require("hapi");
+var Hapi = require("@hapi/hapi");
 
 var subdomains = require("../");
 
 var expect = Code.expect;
 
-lab.experiment("Subdomains plugin", function() {
+lab.experiment("Subdomains plugin", function () {
   lab.test("should load correctly", async () => {
     const server = Hapi.Server({});
 
@@ -43,7 +43,7 @@ lab.experiment("Subdomains plugin", function() {
     const { message } = res.request.response._error;
     expect(message).to.equal(
       "provide exclude property as an array" +
-        " to reject subdomains or provide an empty array!"
+      " to reject subdomains or provide an empty array!"
     );
     expect(res.statusCode).to.equal(500);
   });
@@ -77,7 +77,7 @@ lab.experiment("Subdomains plugin", function() {
     server.route({
       method: "GET",
       path: "/",
-      handler: function(request) {
+      handler: function (request) {
         return request.subdomains;
       }
     });
