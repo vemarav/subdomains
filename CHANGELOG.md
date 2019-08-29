@@ -1,3 +1,6 @@
+# v1.0.3
+- security updates
+
 # v1.0.0
 - Tested with latest hapijs v18.0.0
 
