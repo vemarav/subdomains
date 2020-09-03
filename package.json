@@ -20,7 +20,7 @@
   "devDependencies": {
     "code": "^5.2.4",
     "eslint": "^5.16.0",
-    "@hapi/hapi": "^18.3.1",
+    "@hapi/hapi": "^19.1.1",
     "lab": "^18.0.2"
   }
 }
